@@ -1,0 +1,16 @@
+.scroll-up{
+    position:fixed;
+    right: 2.5rem;
+    bottom:20%;
+    background-color: rgb(243, 236, 236);
+    opacity: 0.8;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    transition: .4s;
+}
+.scroll-up-icon{
+    font-size: 1.5rem;
+}
+.scroll-up:hover{
+    background-color: rgb(138, 137, 137);
+}

@@ -1,0 +1,103 @@
+.home-section {
+  display: grid;
+  /*flex-direction: column;
+  justify-content: center;*/
+  padding: 6rem 0 2rem;
+  color: #d6edf1;
+  background-color: rgba(0, 0, 0, 0.938);
+  background-image: linear-gradient(to right top, #070707, #100f0f, #161515, #1b1a19, #1f1f1d);
+}
+.home-container {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  /*grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 6rem;*/
+}
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 5.5rem;
+  align-items: center;
+}
+.home-img {
+  background-image: url(../utils//AboutImg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 9999px;
+  /*box-shadow / order*/
+  justify-self: flex-start;
+}
+.social-container {
+  display: flex;
+  flex-direction: column;
+}
+.wave-hand {
+  display: flex;
+  flex-direction: column;
+}
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 0.25rem;
+  margin-right: 0.5rem;
+  color: #d6edf1;
+}
+.hello-icon {
+  width: 70px;
+  height: 70px;
+  margin-left: 0.5rem;
+  background-color: none;
+}
+.home-subtitle {
+  position: relative;
+  font-size: 1.25rem;
+  padding-left: 5.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  padding-top: 8px;
+}
+.home-subtitle::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 1px;
+  background-color: #d6edf1;
+  top: 1.4rem;
+  left: 0;
+}
+.home-desc {
+  max-width: 400px;
+  margin-bottom: 3rem;
+}
+.hello-btn {
+  display: inline-flex;
+  background-color: #e2f3f7;
+  color: rgba(15, 15, 15, 0.904);
+  position: relative;
+  top: 0;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  align-items: center;
+  font-size: 20px;
+  gap: 8px;
+  margin: 15px;
+}
+.hello-btn:hover {
+  background-color: rgba(199, 199, 199, 0.473);
+  color: rgba(0, 0, 0, 0.973);
+}
+.msg-icon {
+  font-size: 22px;
+  position: relative;
+
+  top: 2px;
+  color: black;
+  font-weight: 600;
+}

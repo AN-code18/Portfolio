@@ -1,0 +1,10 @@
+.home-social {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+.home-social-icon {
+  color: black;
+  font-size: 1.25rem;
+}
