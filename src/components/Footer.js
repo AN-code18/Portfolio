@@ -25,10 +25,10 @@ function Footer() {
           </li>
         </ul>
         <div className="footer-social-links">
-          <a href="github" className="social-link" target="_blank">
+          <a href="https://github.com/AN-code18" className="social-link" target="_blank">
             <span className="social-icons"><FaGithubSquare /></span>
           </a>
-          <a href="linkedin" className="social-link" target="_blank">
+          <a href="https://www.linkedin.com/in/anisha-kumari-9051a01b5/" className="social-link" target="_blank">
             <span className="social-icons"><FaLinkedin /></span>
           </a>
 

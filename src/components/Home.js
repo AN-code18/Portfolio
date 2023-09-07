@@ -1,4 +1,4 @@
-import { PiTelegramLogoBold } from "react-icons/pi";
+import { FaRegHandPeace } from "react-icons/fa";
 import { Bio } from "../data.js";
 import "../styles/home.css";
 import Social from "./Social.js";
@@ -10,6 +10,7 @@ const Home = () => {
     <section className="home-section">
       <div className="home-container">
         <div className="home-content">
+        
           <div className="home-img"></div>
           {/** Data */}
           <div className="home-data">
@@ -21,20 +22,22 @@ const Home = () => {
             </span>
             <h3 className="home-subtitle">{Bio.roles}</h3>
             <p className="home-desc">{Bio.desc}</p>
+            <div className="all-social-links">
+            <Social />
+
+            </div>
             <a href="">
               <button className="hello-btn">
-                Say Hello
                 <span className="msg-icon">
-                  <PiTelegramLogoBold />
+                  <FaRegHandPeace />
                 </span>
+                <span>Say Hello</span>
               </button>
             </a>
           </div>
 
         </div>
-          <div className="social-container">
-         { /*<Social />*/}
-        </div>
+  
         
       </div>
     </section>

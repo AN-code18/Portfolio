@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { projects, projectsNav } from "../data.js";
 import "../styles/Projects.css";
 import ProjectItems from "./ProjectItems.js";
+import '../styles/Card.css';
 
 function Portfolio() {
   const [item, setItem] = useState({ name: "All" });

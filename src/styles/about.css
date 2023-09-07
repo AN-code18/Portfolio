@@ -6,13 +6,15 @@
   padding: 6rem 0 2rem;
   background-color: #131313;
   padding-bottom: 50px 0;
+  color: #fff ;
 }
 .about-title {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
   /*margin-top: 25px;*/
-  color: #d6edf1;
+  color: #fff;
+  padding-bottom: 35px;
 }
 .about-subtitle {
   font-size: 1.35rem;
@@ -20,7 +22,7 @@
   font-weight: 400;
   padding-top: 10px;
   margin-bottom: 4rem;
-  color: #d6edf1;
+  color: #fff;
   text-align: center;
 }
 .about-container {
@@ -33,43 +35,69 @@
   align-items: center;
   column-gap: 6rem;
   max-width: 1200px;
+  position: relative;
   /*
   margin-left:auto;
   margin-right:auto;
   */
 }
 .about-img {
+  position: relative;
+  align-items: center;
+  bottom: 65px;
   width: 450px;
   height: auto;
   border-radius: 1.5rem;
   justify-self: center;
 }
-.download-btn {
-  display: inline-flex;
-  background-color:#e2f3f7;
-  color: rgba(15, 15, 15, 0.904);
-  position: relative;
-  top: 20px;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  gap: 5px;
-  margin: 15px;
-}
-.download-btn:hover {
-  background-color:#42c4c4c0;
-}
 .cv-icon {
   position: relative;
   left: 3px;
   font-size: 1.25rem;
-  color: black;
+  color:  #fff;
 }
 .about-desc {
   padding: 0 4rem 0 0;
   margin-bottom: 2.5rem;
   font-size: 20px;
-  color: #ecfbfd;
+  color: #fff;
 }
+.download-btn{
+  position: relative;
+  top: 0;
+  display: inline-flex;
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #e1e3e7;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #e7e1e100;
+  outline-offset: .6em;
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+  border: 0;
+  gap: 5px;
+  margin: 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.download-btn:hover,
+.download-btn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.download-btn:active {
+  background: var(--color);
+  color: #fff;
+}
+

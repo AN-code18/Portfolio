@@ -33,13 +33,13 @@ function ScrollUp() {
 
   return (
     <div className="scroll-up">
-      {isVisible && (
+      
         <div onClick={gotToTop}>
           <span className="scroll-up-icon">
             <RxDoubleArrowUp />
           </span>
         </div>
-      )}
+      
     </div>
   );
 }

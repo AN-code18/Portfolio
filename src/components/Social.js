@@ -9,7 +9,7 @@ function Social() {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+           <FaLinkedin size={30} />
         </>
       ),
       href: "https://www.linkedin.com/in/anisha-kumari-9051a01b5/",
@@ -18,7 +18,7 @@ function Social() {
       id: 2,
       child: (
         <>
-          Github <FaGithub size={30} />
+          <FaGithub size={30} />
         </>
       ),
       href: "https://github.com/AN-code18",
@@ -27,7 +27,7 @@ function Social() {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:anishakumari200023@gmail.com",

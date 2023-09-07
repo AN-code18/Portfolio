@@ -4,14 +4,14 @@
   align-items: center;
   width: 100%;
   height: 85px;
-  color: #d6edf1;
-  background-color: #000000;
+  color: #fff;
+  background-color: #1a1a1a;
 }
 h1 {
   font-size: 40px;
   line-height: 1;
   margin-left: 18px;
-  color: #d6edf1;
+  color: #fff;
 }
 ul {
   display: none;
@@ -23,7 +23,7 @@ ul {
   }
 }
 .list-items {
-  color: #d6edf1;
+  color: #fff;
   font-weight: 600;
   font-size: 24px;
   text-transform: capitalize;
@@ -55,11 +55,11 @@ ul {
   width: 100%;
   height: 100vh;
   background-color: #222a35;
-  color: #d6edf1;
+  color: #fff;
 }
 .mobile-list-items {
   cursor: pointer;
-  color: #d6edf1;
+  color: #fff;
   font-weight: 600;
   font-size: 24px;
   text-transform: capitalize;

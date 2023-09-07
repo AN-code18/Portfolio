@@ -2,14 +2,16 @@ import React from "react";
 import "../styles/contact.css";
 import { LiaTelegram } from "react-icons/lia";
 import { HiOutlineMail } from "react-icons/hi";
-import { AiOutlineWhatsApp ,AiOutlineLinkedin ,AiOutlineArrowRight} from "react-icons/ai";
-
+import {
+  AiOutlineWhatsApp,
+  AiOutlineLinkedin,
+  AiOutlineArrowRight,
+} from "react-icons/ai";
 
 function Contact() {
   return (
     <section className="contact-section">
       <h2 className="top-heading">Get in Touch</h2>
-      <span className="heading-subtitle">Contact Me</span>
 
       <div className="contact-container">
         <div className="contact-content">
@@ -30,7 +32,10 @@ function Contact() {
                 href="mailto:anishakumari200023@gmail.com"
                 className="contact-button"
               >
-                Write me <span className="write-me-icon"><AiOutlineArrowRight /></span>
+                Write me{" "}
+                <span className="write-me-icon">
+                  <AiOutlineArrowRight />
+                </span>
               </a>
             </div>
             <div className="contact-card">
@@ -41,7 +46,10 @@ function Contact() {
               <h3 className="contact-card-title">Whatsapp</h3>
               <span className="contact-card-data">7004659893</span>
               <a href="" className="contact-button">
-                Write me <span className="write-me-icon"><AiOutlineArrowRight /></span>
+                Write me{" "}
+                <span className="write-me-icon">
+                  <AiOutlineArrowRight />
+                </span>
               </a>
             </div>
             <div className="contact-card">
@@ -51,15 +59,18 @@ function Contact() {
 
               <h3 className="contact-card-title">Linkedin</h3>
               <span className="contact-card-data">Anisha kumari</span>
-              <a href="" className="contact-button">
-                Write me <span className="write-me-icon"><AiOutlineArrowRight /></span>
+              <a href="https://www.linkedin.com/in/anisha-kumari-9051a01b5/" className="contact-button">
+                Write me{" "}
+                <span className="write-me-icon">
+                  <AiOutlineArrowRight />
+                </span>
               </a>
             </div>
           </div>
         </div>
 
         <div className="contact-content">
-          <h3 className="contact-title">Fill your details here</h3>
+          <h3 className="contact-title">Contact Me</h3>
           <form className="contact-form">
             <div className="form-div">
               <label className="tag-name">Name </label>

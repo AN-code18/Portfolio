@@ -1,8 +1,8 @@
 .home-social {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: max-content;
-  row-gap: 1rem;
+  display: flex;
+  flex-direction:row;
+ padding: 15px 15px;
+ column-gap: 5rem;
 }
 .home-social-icon {
   color: black;
