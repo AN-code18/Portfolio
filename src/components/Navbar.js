@@ -14,20 +14,14 @@ const Navbar = () => {
       id: 2,
       link: "skills",
     },
+
     {
       id: 3,
-      link: "Experience",
-    },
-    {
-      id: 4,
       link: "Projects",
     },
+
     {
-      id: 5,
-      link: "Education",
-    },
-    {
-      id: 6,
+      id: 4,
       link: "Contact",
     },
   ];
@@ -40,7 +34,8 @@ const Navbar = () => {
       <ul className="menu-list">
         {LinkArray.map(({ id, link }) => (
           <li key={id} className="list-items">
-            {link}
+            {" "}
+            <a href={link} className="list">{link}</a>
           </li>
         ))}
       </ul>
@@ -48,12 +43,11 @@ const Navbar = () => {
       <div className="icons" onClick={() => setNav(!nav)}>
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-      {/**if nav == true then show it */}
       {nav && (
         <ul className="mobile-list">
           {LinkArray.map(({ id, link }) => (
             <li key={id} className="mobile-list-items">
-              {link}
+              <a href={link} className="list">{link}</a>
             </li>
           ))}
         </ul>

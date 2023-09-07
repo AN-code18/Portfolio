@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem 0 2rem;
+  padding-top: 8rem ;
   background-color: #131313;
-  padding-bottom: 50px 0;
-  color: #fff ;
+ 
+  color: #fff;
 }
 .about-title {
   text-align: center;
@@ -14,16 +14,9 @@
   font-weight: 500;
   /*margin-top: 25px;*/
   color: #fff;
-  padding-bottom: 35px;
-}
-.about-subtitle {
-  font-size: 1.35rem;
-  display: block;
-  font-weight: 400;
-  padding-top: 10px;
-  margin-bottom: 4rem;
-  color: #fff;
-  text-align: center;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 2px -2px rgba(226, 225, 225, 0.2);
+  width: 20%;
 }
 .about-container {
   display: flex;
@@ -34,8 +27,9 @@
   grid-template-columns: repeat(2, 1fr);*/
   align-items: center;
   column-gap: 6rem;
-  max-width: 1200px;
+  max-width:1100px;
   position: relative;
+  height: 100vh;
   /*
   margin-left:auto;
   margin-right:auto;
@@ -54,7 +48,7 @@
   position: relative;
   left: 3px;
   font-size: 1.25rem;
-  color:  #fff;
+  color: #fff;
 }
 .about-desc {
   padding: 0 4rem 0 0;
@@ -62,22 +56,26 @@
   font-size: 20px;
   color: #fff;
 }
-.download-btn{
+.download-btn {
   position: relative;
   top: 0;
   display: inline-flex;
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
   --color: #e1e3e7;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #e7e1e100;
-  outline-offset: .6em;
+  outline-offset: 0.6em;
   font-size: 20px;
   font-weight: 600;
   align-items: center;
@@ -90,14 +88,58 @@
 }
 
 .download-btn:hover,
-.download-btn:focus-visible{
+.download-btn:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 
 .download-btn:active {
   background: var(--color);
   color: #fff;
 }
+@media screen and (max-width: 992x){
+  .about-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-data{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+/*
+@media screen and (max-width: 992x) {
+  .about-container {
+    padding-top: 35px;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  .about-img {
+    width: 220px;
+  }
+  .about-data {
+    text-align: center;
+  }
+  .about-desc {
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 576x) {
+  .about-desc {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body {
+    margin: 0 0;
+  }
+  .about-section {
+    padding: 2rem 0 4rem;
+  }
+
+}*/

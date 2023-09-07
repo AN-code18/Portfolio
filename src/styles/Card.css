@@ -2,12 +2,17 @@
   border: 1px solid rgb(158, 156, 156);
   padding: 1.25rem;
   border-radius: 1rem;
+  box-shadow: rgba(114, 114, 114, 0.35) 2px 5px 25px;
 }
 .card-img {
   width: 295px;
   height: 200px;
   border-radius: 1rem;
   margin-bottom: 1rem;
+}
+.card:focus {
+  border-bottom: 3px solidrgba(243, 152, 61, 0.69)0;
+  border-radius: 4px 4px 2px 2px;
 }
 .card-title {
   font-size: 1.25rem;
@@ -39,6 +44,6 @@
   
 }
 .card:hover {
-  box-shadow: 5px 0px 20px 1px #f1ab643f;
+  box-shadow: 5px 0px 20px 2px #e29a52b0;
   border: 1px solid rgba(255, 255, 255, 0.454);
 }

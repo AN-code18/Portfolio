@@ -1,4 +1,9 @@
 import SortV from "./utils/SortV.png";
+import FileShare from './utils/FileShare.jpeg';
+import TopCourse from './utils/TopCourse.jpeg';
+import Testimonial from './utils/Testimonial.jpeg'
+import RandomGif from './utils/RandomGif.jpeg'
+
 export const Bio = {
   name: "Anisha Kumari",
   roles: "Full Stack Developer | Programmer",
@@ -152,8 +157,7 @@ export const projects = [
   {
     id: 1,
     title: "File-Sharing Website",
-    image: SortV,
-
+    image: FileShare,
     category: "App",
     github: "https://github.com/AN-code18/filesharing-website",
     webapp: "",
@@ -161,7 +165,7 @@ export const projects = [
   {
     id: 2,
     title: "Top Courses Website",
-    image: SortV,
+    image: TopCourse,
     category: "Web",
     github: "https://github.com/AN-code18/Top-courses",
     webapp: "",
@@ -169,8 +173,7 @@ export const projects = [
   {
     id: 3,
     title: "Testimonial Website",
-    image: "",
-
+    image: Testimonial,
     category: "App",
     github: "https://github.com/AN-code18/Our-Testimonial",
     webapp: "",
@@ -178,8 +181,7 @@ export const projects = [
   {
     id: 4,
     title: "Shopp-App ",
-    image: SortV,
-
+    image: RandomGif,
     category: "App",
     github: "https://github.com/AN-code18/shopapp-redux",
     webapp: "",
@@ -187,8 +189,7 @@ export const projects = [
   {
     id: 5,
     title: "Random GIF",
-    image: SortV,
-
+    image: RandomGif,
     category: "Web",
     github: "",
     webapp: "",

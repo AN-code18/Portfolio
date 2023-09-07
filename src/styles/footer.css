@@ -51,6 +51,7 @@
 }
 .social-link:hover {
   color: rgb(128, 126, 126);
+  
 }
 .social-icons {
   width: 30px;
@@ -70,7 +71,6 @@
   height: 50px;
   justify-content: center;
   margin-top: 25px;
-
   text-align: center;
   width: 100%;
 }

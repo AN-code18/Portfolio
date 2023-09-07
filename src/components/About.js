@@ -37,7 +37,7 @@ function About() {
             </button>
           </a>
 
-          <a href="#contact">
+          <a href="https://www.linkedin.com/in/anisha-kumari-9051a01b5/" target="_blank">
             <button className="download-btn">
               Let's Connect
               <span className="cv-icon">

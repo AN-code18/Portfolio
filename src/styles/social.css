@@ -1,10 +1,65 @@
+li {
+  list-style: none;
+}
+.social {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  justify-content: space-between;
+}
+.child {
+  color: aqua;
+  box-shadow: rgba(93, 165, 199, 0.25) 0px 6px 12px -2px,
+    rgba(131, 221, 202, 0.363) 0px 4px 7px -5px;
+}
 .home-social {
-  display: flex;
-  flex-direction:row;
- padding: 15px 15px;
- column-gap: 5rem;
+  position: relative;
+  float: right;
+  top: 200px;
+  right: 80px;
+  overflow: hidden;
+  margin: 10px;
+  padding-top: 15px;
 }
 .home-social-icon {
-  color: black;
-  font-size: 1.25rem;
+  width: 45px;
+  height: 45px;
+  font-size: 28px;
+  transition: 0.2s linear;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+.home-social-icon {
+  transition: 0.2s linear;
+  top: 115%;
+}
+.home-social-icon:hover, .go-tb:hover{
+  transform: scale(1.1);
+}
+.go-tb {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  float: right;
+  top: 400px;
+  right: 32px;
+}
+.btm-icon {
+  font-size: 42px;
+  color: aquamarine;
+}
+
+@media screen and (max-width: 992px) {
+  .home-social-icon,
+  .go-tb {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-social-icon,
+  .go-tb {
+    visibility: hidden;
+  }
 }

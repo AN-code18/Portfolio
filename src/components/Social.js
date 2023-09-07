@@ -1,7 +1,8 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { BiChevronsDown } from "react-icons/bi";
 import "../styles/social.css";
+import { HiOutlineMail } from "react-icons/hi";
 
 function Social() {
   const SocialLinksArray = [
@@ -9,7 +10,7 @@ function Social() {
       id: 1,
       child: (
         <>
-           <FaLinkedin size={30} />
+          <FaLinkedin size={30} />
         </>
       ),
       href: "https://www.linkedin.com/in/anisha-kumari-9051a01b5/",
@@ -34,17 +35,27 @@ function Social() {
     },
   ];
 
+  const gotToBottom = () => {
+    window.scrollTo(
+     3000,6000
+    );
+  };
+
   return (
-    <div className="home-social">
-      <ul className="home-social-icon">
+    <div className="social">
+      <div className="home-social">
         {SocialLinksArray.map(({ id, child, href }) => (
           <li key={id} className="home-social-icon">
-            <a href={href} className="" target="_blank" rel="noreferrer">
-              {child}
+            <a href={href} className="child-icon" target="_blank" rel="noreferrer">
+              <span className="child">{child} </span>
             </a>
           </li>
         ))}
-      </ul>
+      </div>
+      <div onClick={gotToBottom} className="go-tb">
+          <span className="btm-icon"><BiChevronsDown /> </span>
+          
+        </div>
     </div>
   );
 }

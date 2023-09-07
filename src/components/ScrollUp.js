@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../styles/scrollup.css";
 import { RxDoubleArrowUp } from "react-icons/rx";
 
 function ScrollUp() {
-  const [isVisible, setIsVisible] = useState(false);
-
   const gotToTop = () => {
     window.scrollTo({
       top: 0,
@@ -12,35 +10,14 @@ function ScrollUp() {
       behavior: "smooth",
     });
   };
-
-  const scrollListner = () => {
-    let height = 300;
-    const pageScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-
-    if (pageScroll > height) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", scrollListner);
-
-    window.removeEventListener("scroll", scrollListner);
-  }, []);
-
   return (
-    <div className="scroll-up">
-      
-        <div onClick={gotToTop}>
+  <div className="scroll-up">   
+    <div onClick={gotToTop} className="top-btn">
           <span className="scroll-up-icon">
             <RxDoubleArrowUp />
           </span>
-        </div>
-      
     </div>
+  </div>
   );
 }
 
