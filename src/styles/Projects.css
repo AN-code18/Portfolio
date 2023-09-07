@@ -5,6 +5,7 @@
   align-items: center;
   column-gap: 2rem;
   margin-bottom: 2rem;
+  padding-top: 35px;
 }
 .work-item{
   font-weight: 500;
@@ -63,14 +64,20 @@
   padding: 6rem 0 2rem;
   background-color: #131313;
   color:#fff ;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 .section-title {
-  font-size: 2.5rem;
-  color: #fff;
-  text-align: center;
-  font-weight: 500;
-  padding-bottom: 35px;
+ text-align: center;
+ font-size: 2.5rem;
+ font-weight: 500;
+ margin-top: 25px;
+ color: #fff;
+ 
 }
+
+
 .work-container {
   display: grid;
   /*gap: 1.5rem;

@@ -8,7 +8,7 @@ import shakeHand from "../utils/cute-wave.gif";
 
 const Home = () => {
   return (
-    <section className="home-section">
+    <section id="home" className="home-section">
       <Social />
      
       <div className="home-container">

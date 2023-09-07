@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/navbar.css";
 
@@ -8,21 +8,25 @@ const Navbar = () => {
   const LinkArray = [
     {
       id: 1,
-      link: "About",
+      title: "About",
+      link: "about",
     },
     {
       id: 2,
+      title: "Skills",
       link: "skills",
     },
 
     {
       id: 3,
-      link: "Projects",
+      title: "Projects",
+      link: "projects",
     },
 
     {
       id: 4,
-      link: "Contact",
+      title: "Contact",
+      link: "contact",
     },
   ];
   return (
@@ -32,22 +36,41 @@ const Navbar = () => {
       </div>
 
       <ul className="menu-list">
-        {LinkArray.map(({ id, link }) => (
+        {LinkArray.map(({ id, link, title }) => (
           <li key={id} className="list-items">
-            {" "}
-            <a href={link} className="list">{link}</a>
+            <Link
+              to={link}
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="list"
+            >
+              {title}
+            </Link>
           </li>
         ))}
       </ul>
 
-      <div className="icons" onClick={() => setNav(!nav)}>
+      <div className="mobile-icons" onClick={() => setNav(!nav)}>
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       {nav && (
         <ul className="mobile-list">
-          {LinkArray.map(({ id, link }) => (
+          {LinkArray.map(({ id, link,title }) => (
             <li key={id} className="mobile-list-items">
-              <a href={link} className="list">{link}</a>
+              <Link
+                to={link}
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="list"
+              >
+                {title}
+              </Link>
             </li>
           ))}
         </ul>

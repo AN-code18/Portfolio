@@ -4,7 +4,7 @@ import "../styles/skills.css";
 
 function Skills() {
   return (
-    <div className="container">
+    <div id="skills" className="container">
       <div className="wrapper">
         <h3 className="title">Skills</h3>
 

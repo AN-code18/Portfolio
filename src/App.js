@@ -6,13 +6,12 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Social from "./components/Social";
 
 function App() {
   return (
-    <>
-
+    <div className="App">
       <Navbar />
       <Home />
       <About />
@@ -20,8 +19,8 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-     
-    </>
+      
+    </div>
   );
 }
 

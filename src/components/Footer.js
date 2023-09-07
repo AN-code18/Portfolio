@@ -5,7 +5,7 @@ import ScrollUp from "./ScrollUp";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div id="footer" className="footer">
       <footer className="footer-container">
         <h1 className="footer-title">Anisha</h1>
         <ul className="footer-list">
@@ -40,7 +40,7 @@ function Footer() {
             className="social-link"
             target="_blank"
           >
-            <span className="social-icons">
+            <span className="social-icons" >
               <FaLinkedin />
             </span>
           </a>

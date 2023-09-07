@@ -7,7 +7,7 @@ import { BiMessageRoundedDetail } from "react-icons/bi";
 import "../styles/about.css";
 function About() {
   return (
-    <div className="about-section">
+    <div id="about" className="about-section">
       <h2 className="about-title">About Me</h2>
 
       <div className="about-container">

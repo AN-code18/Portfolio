@@ -12,9 +12,10 @@
   font-size: 2.5rem;
   font-weight: 500;
   margin-top: 20px;
-  padding-bottom: 45px;
   color: #fff;
-  
+  border: 1px solid transparent;
+  box-shadow: 0 4px 2px -2px rgba(226, 225, 225, 0.2);
+  width: 20%;
 }
 .heading-subtitle {
   color: #fff;
@@ -37,7 +38,8 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
+  padding-top: 35px;
 }
 .contact_info {
   display: grid;
@@ -92,8 +94,9 @@
   column-gap: 0.25rem;
   justify-content: center;
   color: #fff;
-  font-size: 0.813;
+  font-size: 0.813rem;
   text-decoration: none;
+  
 }
 .write-me-icon {
   font-size: 1.25rem;
@@ -149,13 +152,13 @@
   background-color: transparent;
   color: #ffffff;
   padding: 15px 30px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: background-color 0.3s ease-in, transform 0.3s ease;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   border: none;
   box-shadow: 0px 2px 6px rgb(43, 41, 41);
 }
@@ -167,13 +170,15 @@
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #ffff;
+  background-color: #505050;
   color: black;
   opacity: 0;
   transition: width 0.7s ease-in-out, opacity 0.9s ease;
 }
 .send-button:hover {
   transform: scale(1.05);
+  border-bottom: 2px solid transparent;
+  box-shadow: 0px 2px 6px #7ab5e2;
 }
 
 .send-button:hover:before {
@@ -182,8 +187,8 @@
 }
 
 .send-button:active {
-  background-color: #7ab5e2;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid transparent;
+  box-shadow: 0px 2px 6px #7ab5e2;
   transform: scale(0.98);
 }
 
@@ -196,8 +201,8 @@
 .message-icon {
   position: relative;
   left: 2px;
-  top: 2px;
-  font-size: 1.35rem;
+  top: 3px;
+  font-size: 1.5rem;
   color: white;
   margin-left: 0.5rem;
 }

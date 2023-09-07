@@ -10,7 +10,7 @@ import {
 
 function Contact() {
   return (
-    <section className="contact-section">
+    <section id="contact"className="contact-section">
       <h2 className="top-heading">Get in Touch</h2>
 
       <div className="contact-container">

@@ -40,22 +40,22 @@
   justify-content: center;
   column-gap: 1.5rem;
   font-size: 1.25rem;
- 
 }
 .social-link {
   font-size: 1.875rem;
   padding: 0.4rem;
   border-radius: 0.5rem;
   display: inline-flex;
-  color: rgb(161, 161, 161);
+  color: rgb(177, 173, 173);
 }
 .social-link:hover {
-  color: rgb(128, 126, 126);
-  
+  transform: scale(1.65);
+  transition-duration: 200ms;
+  color: rgb(212, 198, 198);
 }
 .social-icons {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 .footer-copyright-txt {
   display: block;

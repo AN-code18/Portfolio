@@ -5,7 +5,6 @@
   align-items: center;
   padding-top: 8rem ;
   background-color: #131313;
- 
   color: #fff;
 }
 .about-title {
@@ -108,38 +107,3 @@
     flex-direction: column;
   }
 }
-
-/*
-@media screen and (max-width: 992x) {
-  .about-container {
-    padding-top: 35px;
-    grid-template-columns: 1fr;
-    row-gap: 3rem;
-  }
-  .about-img {
-    width: 220px;
-  }
-  .about-data {
-    text-align: center;
-  }
-  .about-desc {
-    justify-content: center;
-    padding: 0;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 576x) {
-  .about-desc {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .body {
-    margin: 0 0;
-  }
-  .about-section {
-    padding: 2rem 0 4rem;
-  }
-
-}*/

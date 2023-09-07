@@ -3,14 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  width: 2rem;
-  height: 2rem;
-  background-color: #030303;
+
+  width: 2.5rem;
+  height: 2.5rem;
   overflow: hidden;
-  cursor:pointer;
+  cursor: pointer;
 }
-.scroll-up-icon{
-color:#fff;
-font-size: 1.28rem;
+.scroll-up-icon {
+  color: #fff;
+  font-size: 28px;
+}
+.top-btn,
+.scroll-up-icon:hover {
+  transform: scale(1.25);
 }
