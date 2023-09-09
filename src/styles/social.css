@@ -5,61 +5,53 @@ li {
   position: relative;
   display: inline-block;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-between; 
+  z-index: 10;
 }
 .child {
-  color: aqua;
-  box-shadow: rgba(93, 165, 199, 0.25) 0px 6px 12px -2px,
-    rgba(131, 221, 202, 0.363) 0px 4px 7px -5px;
+  color: #56a9ec;
+  padding-bottom: 80px;
 }
 .home-social {
   position: relative;
   float: right;
-  top: 200px;
-  right: 80px;
+  justify-content: center;
+  top: 280px;
+  right: 70px;
   overflow: hidden;
   margin: 10px;
   padding-top: 15px;
+  row-gap: 1rem;
+  
+}
+.down-arraow{
+  right: 60px;
 }
 .home-social-icon {
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   font-size: 28px;
   transition: 0.2s linear;
-  align-items: center;
-  padding-top: 10px;
+  padding-top: 25px;
   padding-bottom: 35px;
+  font-weight: 500;
+ 
 }
-.home-social-icon {
-  transition: 0.2s linear;
-  top: 115%;
-}
-.home-social-icon:hover, .go-tb:hover{
-  transform: scale(1.1);
-}
-.go-tb {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  float: right;
-  top: 400px;
-  right: 32px;
-}
-.btm-icon {
-  font-size: 42px;
-  color: aquamarine;
+.home-social-icon:hover {
+  transform: scale(1.2);
+  padding-left: 6px;
+  transition-duration: 200ms;
+  color: #0c69b4;
+  box-shadow:  rgba(10, 151, 161, 0.65) 0px 4px 6px -1px,rgba(207, 6, 6, 0.08) 0px 1px 0px inset;
 }
 
-@media screen and (max-width: 992px) {
-  .home-social-icon,
-  .go-tb {
-    visibility: hidden;
+@media screen and (max-width: 1000px) {
+  .home-social-icon{
+    display: none;
   }
 }
-
 @media screen and (max-width: 768px) {
-  .home-social-icon,
-  .go-tb {
+  .home-social-icon {
     visibility: hidden;
   }
 }

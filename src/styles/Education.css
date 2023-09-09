@@ -1,0 +1,118 @@
+.ed-section {
+  background-color: #131313;
+  padding: 6rem 0 2rem;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  
+}
+.ed-ex-section {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 0.5fr;
+  color: #fff;
+}
+.ed-container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ed-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.ed-button {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+}
+.ed-button:hover {
+  transform: scale(1.2);
+  padding-left: 8px;
+  transition-duration: 100ms;
+  border: 2px solid rgb(61, 59, 59);
+  box-shadow: 0px 2px 6px #7ab5e2;
+}
+.ed-icon {
+  position: relative;
+  top: 2px;
+  font-size: 1.6rem;
+  margin-right: 0.35rem;
+}
+.ed-active {
+  color: rgb(76, 158, 179);
+}
+.ed-content {
+  display: none;
+}
+.ed-content-active {
+  display: block;
+}
+.ed-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+.ed-title {
+  font-size: 24px;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+.ed-subtitle {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.ed-calender {
+  font-size: 17px;
+}
+.calender-icon {
+  font-size:20px;
+  padding-right: 8px;
+}
+.ed-rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.ed-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  transform: translate(6px, -7px);
+}
+@media screen and (max-width: 992px) {
+  .ed-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ed-container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ed-ex-section {
+    grid-template-columns: initial;
+  }
+  .ed-button {
+    margin: 0 0.75rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ed-data {
+    gap: 0.5rem;
+  }
+}

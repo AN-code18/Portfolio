@@ -2,15 +2,12 @@ import { FaRegHandPeace } from "react-icons/fa";
 import { Bio } from "../data.js";
 import "../styles/home.css";
 import Social from "./Social.js";
-//import AboutImg from "../utils/AboutImg.jpg";
 import shakeHand from "../utils/cute-wave.gif";
-
 
 const Home = () => {
   return (
     <section id="home" className="home-section">
-      <Social />
-     
+       <Social /> 
       <div className="home-container">
         <div className="home-content">
           <div className="home-img"></div>

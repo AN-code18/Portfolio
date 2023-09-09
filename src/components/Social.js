@@ -5,6 +5,12 @@ import "../styles/social.css";
 import { HiOutlineMail } from "react-icons/hi";
 
 function Social() {
+
+  
+  const gotToBottom = () => {
+    window.scrollTo(3000, 6000);
+  };
+
   const SocialLinksArray = [
     {
       id: 1,
@@ -33,29 +39,37 @@ function Social() {
       ),
       href: "mailto:anishakumari200023@gmail.com",
     },
+    {
+      id: 4,
+      child: (
+        <span onClick={gotToBottom} className="down-arraow">
+          <BiChevronsDown  size={40} />
+        </span>
+      ),
+      
+    },
   ];
-
-  const gotToBottom = () => {
-    window.scrollTo(
-     3000,6000
-    );
-  };
 
   return (
     <div className="social">
       <div className="home-social">
-        {SocialLinksArray.map(({ id, child, href }) => (
-          <li key={id} className="home-social-icon">
-            <a href={href} className="child-icon" target="_blank" rel="noreferrer">
-              <span className="child">{child} </span>
-            </a>
-          </li>
-        ))}
-      </div>
-      <div onClick={gotToBottom} className="go-tb">
-          <span className="btm-icon"><BiChevronsDown /> </span>
-          
+        <div>
+          <ul>
+            {SocialLinksArray.map(({ id, child, href }) => (
+              <li key={id} className="home-social-icon">
+                <a
+                  href={href}
+                  className="child-icon"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="child">{child} </span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
+      </div>
     </div>
   );
 }

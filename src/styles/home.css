@@ -1,8 +1,6 @@
 .home-section {
   display: grid;
-  /*flex-direction: column;
-  justify-content: center;*/
-  padding: 6rem 0 2rem;
+  /*padding: 6rem 0 2rem;*/
   color: #fff;
   background-color: #131313;
 }
@@ -14,9 +12,8 @@
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
-  /*grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  column-gap: 6rem;*/
+  padding-bottom:6rem;
+ 
 }
 .home-content {
   position: relative;
@@ -62,7 +59,7 @@
   font-family: Monospace;
   position: relative;
   font-size: 1.35rem;
-  padding-left: 5.4rem;
+  padding-left: 5rem;
   font-weight: 400;
   margin-bottom: 1rem;
   padding-top: 8px;
@@ -70,10 +67,10 @@
 .home-subtitle::before {
   content: "";
   position: absolute;
-  width: 75px;
+  width: 65px;
   height: 1px;
   background-color: #fff;
-  top: 1.2rem;
+  top: 1.3rem;
   left: 0;
 }
 .home-desc {
@@ -88,25 +85,6 @@
   font-weight: 600;
 }
 
-/*hello-btn {
-  display: inline-flex;
-  background-color: #e2f3f7;
-  color: rgba(15, 15, 15, 0.904);
-  position: relative;
-  top: 0;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  gap: 8px;
-  margin: 15px;
-}
-.hello-btn:hover {
-  background-color: rgba(199, 199, 199, 0.473);
-  color: rgba(0, 0, 0, 0.973);
-}*/
-
 .social-div {
   position: relative;
 }
@@ -120,7 +98,7 @@
   display: flex;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.2;
   text-decoration: none;
   text-transform: uppercase;
   outline: 0;
@@ -147,6 +125,11 @@
 }
 
 @media screen and (max-width: 992px) {
+  .home-container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-top: 45px;
+  }
   .home-content {
     display: flex;
     flex-direction: column;
@@ -158,15 +141,12 @@
   }
   .home-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 400;
-    padding-top: 25px;
+    padding-top: 15px;
   }
   .hello-btn {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem 1.75rem;
   }
 }
 
@@ -179,4 +159,36 @@
     width: 250px;
     height: 250px;
   }
+  .home-section{
+    padding: 2rem 0 4rem;
+  }
+  .home-data{
+    justify-content: center;
+    align-items: center;
+   }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+ .home-data{
+  justify-content: center;
+  align-items: center;
+ }
+}
+
+@media screen and (max-width:450px) {
+  .home-img {
+    width: 190px;
+    height: 190px;
+  }
+  .hello-icon{
+    width:40px;
+    height:40px;
+  }
+  .home-subtitle::before{
+    display: none;
+  }
+  .home-data{
+   justify-content: center;
+   align-items: center;
+  }
+
 }

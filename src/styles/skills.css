@@ -24,7 +24,7 @@
 }
 @media (max-width: 960px) {
   .wrapper {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 .title {

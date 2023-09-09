@@ -1,8 +1,9 @@
-import SortV from "./utils/SortV.png";
-import FileShare from './utils/FileShare.jpeg';
-import TopCourse from './utils/TopCourse.jpeg';
-import Testimonial from './utils/Testimonial.jpeg'
-import RandomGif from './utils/RandomGif.jpeg'
+import SortV from "./utils/shorting vis.png";
+import FileShare from './utils/file-share.png';
+import TopCourse from './utils/top-course 2.jpg';
+import Testimonial from './utils/random-gif.gif'
+import RandomGif from './utils/random-giphy.gif';
+import ecomm from './utils/e-comm.png'
 
 export const Bio = {
   name: "Anisha Kumari",
@@ -181,7 +182,7 @@ export const projects = [
   {
     id: 4,
     title: "Shopp-App ",
-    image: RandomGif,
+    image: ecomm,
     category: "App",
     github: "https://github.com/AN-code18/shopapp-redux",
     webapp: "",

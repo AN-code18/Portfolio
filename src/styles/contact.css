@@ -11,11 +11,10 @@
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
-  margin-top: 20px;
   color: #fff;
   border: 1px solid transparent;
   box-shadow: 0 4px 2px -2px rgba(226, 225, 225, 0.2);
-  width: 20%;
+  width: auto;
 }
 .heading-subtitle {
   color: #fff;
@@ -87,6 +86,7 @@
 .contact-card-data {
   display: block;
   margin-bottom: 0.75rem;
+  width: auto;
 }
 .contact-button {
   display: inline-flex;
@@ -96,7 +96,6 @@
   color: #fff;
   font-size: 0.813rem;
   text-decoration: none;
-  
 }
 .write-me-icon {
   font-size: 1.25rem;
@@ -130,10 +129,10 @@
   justify-content: center;
 }
 .input-area:focus {
-  border-bottom: 3px solid #5054c0;
-  border-radius: 4px 4px 2px 2px;
+  box-shadow: rgba(132, 202, 235, 0.09) 0px 2px 1px,
+    rgba(179, 223, 236, 0.09) 0px 4px 2px, rgba(7, 122, 199, 0.09) 0px 8px 4px,
+    rgba(5, 170, 236, 0.226) 0px 32px 16px;
 }
-
 .input-area:hover {
   outline: 1px solid rgb(194, 191, 191);
 }
@@ -144,10 +143,9 @@
   font-size: 1rem;
   padding: 0.25rem;
   z-index: 10;
-  background-color:#131313 ;
+  background-color: #131313;
 }
-
-.send-button{
+.send-button {
   margin-top: 25px;
   background-color: transparent;
   color: #ffffff;
@@ -162,7 +160,6 @@
   border: none;
   box-shadow: 0px 2px 6px rgb(43, 41, 41);
 }
-
 .send-button:before {
   content: "";
   position: absolute;
@@ -222,7 +219,12 @@
   }
   .contact-form {
     justify-content: center;
-    margin: 0 auto;
+    margin:  auto;
+  }
+  .top-heading {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 32px;
   }
 }
 
@@ -232,5 +234,10 @@
   }
   .contact-form {
     width: 100%;
+  }
+  .top-heading {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 32px;
   }
 }

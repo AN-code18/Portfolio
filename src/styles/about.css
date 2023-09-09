@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 8rem ;
+  padding: 6rem 0 2rem;
   background-color: #131313;
   color: #fff;
 }
@@ -11,7 +11,6 @@
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
-  /*margin-top: 25px;*/
   color: #fff;
   border: 1px solid transparent;
   box-shadow: 0 4px 2px -2px rgba(226, 225, 225, 0.2);
@@ -21,27 +20,23 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);*/
   align-items: center;
   column-gap: 6rem;
-  max-width:1100px;
+  max-width: 1100px;
   position: relative;
   height: 100vh;
-  /*
-  margin-left:auto;
-  margin-right:auto;
-  */
+  
 }
 .about-img {
   position: relative;
   align-items: center;
-  bottom: 65px;
+  bottom:85px;
   width: 450px;
   height: auto;
-  border-radius: 1.5rem;
+  margin-left: 30px;
+  border-radius: 1.6rem;
   justify-self: center;
+  box-shadow: rgba(151, 148, 148, 0.3) 0px 19px 38px, rgba(151, 138, 138, 0.22) 0px 15px 12px;
 }
 .cv-icon {
   position: relative;
@@ -50,10 +45,13 @@
   color: #fff;
 }
 .about-desc {
-  padding: 0 4rem 0 0;
-  margin-bottom: 2.5rem;
+  padding: 2rem 4rem 4rem 0;
+  margin-bottom: 10px;
   font-size: 20px;
   color: #fff;
+}
+.btns{
+  margin-bottom: 6rem;
 }
 .download-btn {
   position: relative;
@@ -80,10 +78,11 @@
   align-items: center;
   border: 0;
   gap: 5px;
-  margin: 15px;
+  margin: 18px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-top: 5px;
 }
 
 .download-btn:hover,
@@ -97,13 +96,56 @@
   background: var(--color);
   color: #fff;
 }
-@media screen and (max-width: 992x){
-  .about-container{
-    display: flex;
+@media screen and (max-width: 992px) {
+  .about-section , .about-container{
     flex-direction: column;
   }
+  .about-title{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  .about-desc,.btns{
+   font-size: 18px;
+   display: inline-block;
+   margin-left:65px;
+  }
+ 
   .about-data{
-    display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  }
+  .about-img{
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-title{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-section{
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px){
+  .about-container{
+    height: auto;
+  }
+  .download-btn{
+    font-size: 16px;
+  }
+  .cv-icon{
+    font-size: 1rem;
+  }
+  .about-img{
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height:auto
   }
 }
