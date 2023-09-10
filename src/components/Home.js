@@ -21,7 +21,7 @@ const Home = () => {
             </span>
             <h3 className="home-subtitle">{Bio.roles}</h3>
             <p className="home-desc">{Bio.desc}</p>
-            <a href="">
+            <a href="https://instagram.com/anisha_singh11_11?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">
               <button className="hello-btn">
                 <span>Say Hello</span>
                 <span className="msg-icon">

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { BiChevronsDown } from "react-icons/bi";
+import {IoIosArrowDropdown} from "react-icons/io";
 import "../styles/social.css";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -42,8 +42,8 @@ function Social() {
     {
       id: 4,
       child: (
-        <span onClick={gotToBottom} className="down-arraow">
-          <BiChevronsDown  size={40} />
+        <span onClick={gotToBottom} className="down-arrow" >
+          <IoIosArrowDropdown size={30} />
         </span>
       ),
       

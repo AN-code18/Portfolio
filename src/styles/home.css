@@ -1,6 +1,5 @@
 .home-section {
   display: grid;
-  /*padding: 6rem 0 2rem;*/
   color: #fff;
   background-color: #131313;
 }
@@ -12,7 +11,7 @@
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom:6rem;
+ /* padding-bottom:6rem;*/
  
 }
 .home-content {
@@ -22,6 +21,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  padding-top:0; 
 }
 .home-img {
   background-image: url(../utils//img3.3.jpg);
@@ -50,8 +50,8 @@
   color: #fff;
 }
 .hello-icon {
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   margin-left: 0.5rem;
   background-color: none;
 }
@@ -61,13 +61,13 @@
   font-size: 1.35rem;
   padding-left: 5rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   padding-top: 8px;
 }
 .home-subtitle::before {
   content: "";
   position: absolute;
-  width: 65px;
+  width: 62px;
   height: 1px;
   background-color: #fff;
   top: 1.3rem;
@@ -75,11 +75,11 @@
 }
 .home-desc {
   max-width: 400px;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .msg-icon {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   position: relative;
   top: 2px;
   font-weight: 600;
@@ -96,7 +96,7 @@
   color: #fff;
   cursor: pointer;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
@@ -184,11 +184,14 @@
     height:40px;
   }
   .home-subtitle::before{
-    display: none;
+    width: 40px;
+  }
+  .home-subtitle{
+    align-items: center;
+    padding-left: 3rem;
   }
   .home-data{
    justify-content: center;
    align-items: center;
   }
-
 }

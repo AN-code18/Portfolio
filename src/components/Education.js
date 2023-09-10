@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { PiStudentDuotone } from "react-icons/pi";
 import { LiaStoreSolid } from "react-icons/lia";
 import { SlCalender } from "react-icons/sl";
 import "../styles/Education.css";
 
 function Education() {
-  const [toggle, setToggle] = useState(1);
-
-  const toggleTab = (index) => {
-    setToggle(index);
-  };
+ 
 
   return (
-    <section className="ed-section">
+    <section id="education" className="ed-section">
       <h2 className="section-title">Qualification</h2>
 
       <div className="ed-container">

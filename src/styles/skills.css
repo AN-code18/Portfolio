@@ -28,14 +28,11 @@
   }
 }
 .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 500;
   margin-bottom: 20px;
   color:#fff;
-  border: 1px solid transparent;
-  box-shadow: 0 4px 2px -2px rgba(226, 225, 225, 0.2);
-  width: 20%;
 }
 @media (max-width: 768px) {
   .title {
@@ -78,6 +75,7 @@
     max-width: 330px;
     padding: 10px 36px;
   }
+  
 }
 .skill-title{
   font-size: 28px;
@@ -119,3 +117,4 @@
     padding: 8px 12px;
   }
 }
+

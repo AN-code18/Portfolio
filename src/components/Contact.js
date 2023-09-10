@@ -26,10 +26,10 @@ function Contact() {
 
               <h3 className="contact-card-title">Email</h3>
               <span className="contact-card-data">
-                anishakumari200023@gmail.com
+                Email Me
               </span>
               <a
-                href="mailto:anishakumari200023@gmail.com"
+                href="mailto:anishakumari200023@gmail.com" target="blank"
                 className="contact-button"
               >
                 Write me{" "}
@@ -45,8 +45,8 @@ function Contact() {
 
               <h3 className="contact-card-title">Whatsapp</h3>
               <span className="contact-card-data">7004659893</span>
-              <a href="" className="contact-button">
-                Write me{" "}
+              <a href="https://instagram.com/anisha_singh11_11?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank"className="contact-button" rel="noreferrer">
+                Write me
                 <span className="write-me-icon">
                   <AiOutlineArrowRight />
                 </span>
@@ -59,7 +59,7 @@ function Contact() {
 
               <h3 className="contact-card-title">Linkedin</h3>
               <span className="contact-card-data">Anisha kumari</span>
-              <a href="https://www.linkedin.com/in/anisha-kumari-9051a01b5/" className="contact-button">
+              <a href="https://www.linkedin.com/in/anisha-kumari-9051a01b5/" className="contact-button" target="blank">
                 Write me{" "}
                 <span className="write-me-icon">
                   <AiOutlineArrowRight />
@@ -71,7 +71,7 @@ function Contact() {
 
         <div className="contact-content">
           <h3 className="contact-title">Contact Me</h3>
-          <form className="contact-form">
+          <form className="contact-form" action= "#" type="submit">
             <div className="form-div">
               <label className="tag-name">Name </label>
               <input
@@ -83,7 +83,7 @@ function Contact() {
             </div>
 
             <div className="form-div">
-              <label className="tag-name">Email </label>
+              <label className="tag-name">Email</label>
               <input
                 type="text"
                 name="email"

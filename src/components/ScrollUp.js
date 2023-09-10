@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/scrollup.css";
-import { RxDoubleArrowUp } from "react-icons/rx";
+import {MdOutlineKeyboardDoubleArrowUp} from "react-icons/md";
 
 function ScrollUp() {
   const gotToTop = () => {
@@ -14,7 +14,7 @@ function ScrollUp() {
   <div className="scroll-up">   
     <div onClick={gotToTop} className="top-btn">
           <span className="scroll-up-icon">
-            <RxDoubleArrowUp />
+            <MdOutlineKeyboardDoubleArrowUp />
           </span>
     </div>
   </div>

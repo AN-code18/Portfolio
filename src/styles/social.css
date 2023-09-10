@@ -9,7 +9,7 @@ li {
   z-index: 10;
 }
 .child {
-  color: #56a9ec;
+  color: #29bea6;
   padding-bottom: 80px;
 }
 .home-social {
@@ -22,27 +22,24 @@ li {
   margin: 10px;
   padding-top: 15px;
   row-gap: 1rem;
-  
-}
-.down-arraow{
-  right: 60px;
 }
 .home-social-icon {
   width: 48px;
   height: 48px;
   font-size: 28px;
   transition: 0.2s linear;
-  padding-top: 25px;
+ /* padding-top: 25px;*/
   padding-bottom: 35px;
   font-weight: 500;
- 
 }
 .home-social-icon:hover {
   transform: scale(1.2);
   padding-left: 6px;
   transition-duration: 200ms;
-  color: #0c69b4;
-  box-shadow:  rgba(10, 151, 161, 0.65) 0px 4px 6px -1px,rgba(207, 6, 6, 0.08) 0px 1px 0px inset;
+}
+.child:hover{
+  color: #0bf3e7;
+  
 }
 
 @media screen and (max-width: 1000px) {

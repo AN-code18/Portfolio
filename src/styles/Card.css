@@ -38,6 +38,9 @@
 .card-button:hover .card-icon {
   transform: translateX(0.25rem);
 }
+.icon-hover:hover{
+color: #13eee3;
+}
 .card {
   border-radius: 25px;
   background: #212121;

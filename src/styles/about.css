@@ -1,66 +1,55 @@
 .about-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 6rem 0 2rem;
   background-color: #131313;
-  color: #fff;
 }
-.about-title {
+.section-title {
+  font-size: 2rem;
+  color: white;
   text-align: center;
-  font-size: 2.5rem;
   font-weight: 500;
   color: #fff;
-  border: 1px solid transparent;
-  box-shadow: 0 4px 2px -2px rgba(226, 225, 225, 0.2);
-  width: 20%;
 }
 .about-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  column-gap: 6rem;
-  max-width: 1100px;
-  position: relative;
-  height: 100vh;
-  
+  column-gap: 4rem;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5rem;
 }
 .about-img {
-  position: relative;
-  align-items: center;
-  bottom:85px;
-  width: 450px;
+  width: 350px;
   height: auto;
-  margin-left: 30px;
-  border-radius: 1.6rem;
   justify-self: center;
-  box-shadow: rgba(151, 148, 148, 0.3) 0px 19px 38px, rgba(151, 138, 138, 0.22) 0px 15px 12px;
+  border-radius: 1.5rem;
+  box-shadow: rgba(151, 148, 148, 0.3) 0px 19px 38px,
+    rgba(151, 138, 138, 0.22) 0px 15px 12px;
+}
+.about-desc {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
 }
 .cv-icon {
   position: relative;
   left: 3px;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: #fff;
-}
-.about-desc {
-  padding: 2rem 4rem 4rem 0;
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: #fff;
-}
-.btns{
-  margin-bottom: 6rem;
 }
 .download-btn {
   position: relative;
   top: 0;
   display: inline-flex;
-  --b: 3px; /* border thickness */
-  --s: 0.45em; /* size of the corner */
+  --b: 3px;
+  --s: 0.45em;
   --color: #e1e3e7;
-  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
   background: conic-gradient(
@@ -73,16 +62,18 @@
   transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #e7e1e100;
   outline-offset: 0.6em;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   align-items: center;
   border: 0;
-  gap: 5px;
+  gap: 4px;
   margin: 18px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-top: 5px;
+  padding: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .download-btn:hover,
@@ -91,61 +82,44 @@
   outline-color: var(--color);
   outline-offset: 0.05em;
 }
-
 .download-btn:active {
   background: var(--color);
   color: #fff;
 }
 @media screen and (max-width: 992px) {
-  .about-section , .about-container{
-    flex-direction: column;
+  .about-container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
   }
-  .about-title{
+  .about-img {
+    width: 220px;
+  }
+  .about-data {
     text-align: center;
-    margin-top: 12px;
-    font-size: 32px;
-    padding-bottom: 20px;
-  }
-  .about-desc,.btns{
-   font-size: 18px;
-   display: inline-block;
-   margin-left:65px;
-  }
- 
-  .about-data{
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-  }
-  .about-img{
-    width: 290px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .about-title{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about-section{
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 570px){
-  .about-container{
-    height: auto;
-  }
-  .download-btn{
-    font-size: 16px;
-  }
-  .cv-icon{
-    font-size: 1rem;
-  }
-  .about-img{
     justify-content: center;
-    align-items: center;
-    width: 250px;
-    height:auto
+  }
+  .about-desc {
+    font-size: 16px;
+    padding: 0 5rem;
+    margin-bottom: 2rm;
+  }
+  .btns {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px){
+.section-title{
+  font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 576px) {
+  .about-section {
+    padding: 2rem 0 4rem;
+  }
+  .about-desc {
+    padding: 8px;
+  }
+  .btns {
+    flex-direction: column;
   }
 }

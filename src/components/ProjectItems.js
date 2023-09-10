@@ -14,7 +14,7 @@ function ProjectItems({ item }) {
             
             <a href={item.github} className="card-button" target="_blank">
               Demo
-              <span className="card-icon">
+              <span className="card-icon icon-hover">
                 <FaRegHandPointRight />
               </span>
             </a>
